@@ -1,0 +1,16 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "contains shared code between the students and the teachers dashboards",
+  "author": "abdellani",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "react-redux": "^7.2.6",
+    "swr": "^1.0.1"
+  },
+  "scripts": {
+    "lint":"eslint -c .eslintrc.js --ext .js,.jsx .",
+    "lint:fix": "npm run lint -- --fix"
+  }
+}

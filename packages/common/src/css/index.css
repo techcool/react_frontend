@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+:root {
+  --blue: #28c2ea;
+  --green: #76edcf;
+  --gray: #aaa;
+  --red: #f00;
+}
+
+body {
+  height: 100%;
+}
+
+.hide-scorllbar {
+  -ms-overflow-style: none;
+}
+
+.hide-scorllbar::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  height: 100%;
+}
+
+.art-progress-highlight span {
+  background-color: yellow !important;
+}
+
+.art-video-player video {
+  height: 100% !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.text-green {
+  color: var(--green) !important;
+}
+
+.text-dark-blue {
+  color: var(--blue) !important;
+}
+
+.text-red {
+  color: var(--red) !important;
+}
+
+.text-dark-blue:hover {
+  color: var(--blue) !important;
+}
+
+.bg-dark-blue {
+  background-color: var(--blue) !important;
+}
+
+.bg-dark-blue:hover {
+  background-color: var(--blue) !important;
+}
+
+.bg-green {
+  background-color: var(--green) !important;
+}
+
+.bg-green:hover {
+  background-color: var(--green) !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-transparent:hover {
+  background-color: transparent !important;
+}
+
+.boder-darkblue {
+  border-color: var(--blue) !important;
+}
+
+.boder-darkblue:hover {
+  border-color: var(--blue) !important;
+}
+
+.boder-gray {
+  border-color: #fafafa !important;
+}
+
+.boder-gray:hover {
+  border-color: #fafafa !important;
+}
+
+.RichEditor-root {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: "Georgia", serif;
+  font-size: 14px;
+  padding: 15px;
+  height: 100%;
+}
+
+.RichEditor-editor {
+  border-top: 1px solid #ddd;
+  cursor: text;
+  font-size: 16px;
+  margin-top: 10px;
+  overflow: auto;
+  height: 80%;
+  overflow-x: hidden;
+  /* -ms-overflow-style: none; */
+}
+
+/* .RichEditor-editor::-webkit-scrollbar {
+  display: none;
+} */
+
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+  margin: 0 -15px -15px;
+  padding: 15px;
+}
+
+.RichEditor-editor .public-DraftEditor-content {
+  min-height: 100px;
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+.RichEditor-editor .RichEditor-blockquote {
+  border-left: 5px solid #eee;
+  color: #666;
+  font-family: "Hoefler Text", "Georgia", serif;
+  font-style: italic;
+  margin: 16px 0;
+  padding: 10px 20px;
+}
+
+.RichEditor-editor .public-DraftStyleDefault-pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: "Inconsolata", "Menlo", "Consolas", monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.RichEditor-controls {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.RichEditor-styleButton {
+  color: #999;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+}
+
+.RichEditor-activeButton {
+  color: #5890ff;
+}
+
+/**
+  forms 
+*/
+
+label {
+  /* font-weight: bold !important; */
+  color: #000 !important;
+}
+
+input,
+textarea {
+  border-radius: 4px !important;
+}
+
+textarea:focus {
+  border-color: var(--blue) !important;
+  box-shadow: 0px 0px 2px var(--blue) !important;
+}
+.phone-flag .react-select__control {
+  min-height: 51px;
+}
+
+input:focus {
+  border-color: var(--blue) !important;
+  box-shadow: 0px 0px 2px var(--blue) !important;
+}
+
+select:focus {
+  border-color: var(--blue) !important;
+}
+
+button[name="submit"] {
+  background-color: var(--blue) !important;
+  border-color: var(--blue) !important;
+  color: white !important;
+  font-weight: bold !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075) !important;
+  width: 100%;
+  max-width: 200px;
+  margin-right: 10px !important;
+  margin-bottom: 10px;
+}
+
+button[name="cancel"],
+a[name="cancel"] {
+  background-color: white !important;
+  border-color: #e5e6e7;
+  color: var(--blue) !important;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075) !important;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.nav-pills > .nav-link {
+  border-color: var(--blue) !important;
+  color: var(--blue) !important;
+  font-weight: bold;
+}
+
+.nav-pills > .nav-link.active {
+  background-color: var(--blue) !important;
+  color: white !important;
+}
+
+.react-select__control {
+  border-color: #e5e6e7 !important;
+}
+
+.react-select__control--is-focused {
+  border-color: var(--blue) !important;
+  box-shadow: 0px 0px 2px var(--blue) !important;
+}
+
+.react-select__option--is-selected {
+  background-color: var(--blue) !important;
+}
+
+.react-select__menu {
+  min-width: 200px;
+}
+
+.button-blue {
+  background-color: var(--blue) !important;
+  border-color: var(--blue) !important;
+  width: 100%;
+  max-width: 200px;
+  color: white;
+  font-weight: bold;
+}
+
+.button-gray {
+  background-color: var(--gray) !important;
+  border-color: var(--gray) !important;
+  width: 100%;
+  max-width: 200px;
+  color: white;
+  font-weight: bold;
+}
+
+.button-blue:hover {
+  color: white;
+}
+
+.button-gray:hover {
+  color: white;
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.markdown-preview {
+  overflow: auto;
+  /* -ms-overflow-style: none; */
+}
+
+/* .markdown-preview::-webkit-scrollbar {
+  display: none;
+} */
+
+.markdown-preview * {
+  word-wrap: break-word;
+}
+
+.change-activity-button:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.change-activity-button:hover .turn-to-left,
+.change-activity-button:hover .turn-to-right {
+  fill: var(--blue);
+}
+
+.turn-to-left,
+.turn-to-right {
+  height: 25px;
+  width: 25px;
+  fill: #676a6c;
+}
+
+.turn-to-left {
+  transform: rotate(-90deg);
+}
+
+.turn-to-right {
+  transform: rotate(90deg);
+}
+
+.btn-link:hover {
+  color: var(--blue);
+}
+
+/* .art-video {
+  background-color: white!important;
+}
+
+.art-bottom {
+  height: 40px !important;
+  padding: 0px !important;
+  background-image: none !important;
+  background-color: black !important;
+} */
+
+.border-blue {
+  border-color: #28c2ea;
+}
+
+.border-red {
+  border-color: #f00;
+}
+
+.react-confirm-alert-overlay {
+  z-index: 3000;
+}
+.blue-on-hover:hover {
+  color: var(--blue);
+  cursor: pointer !important;
+}
+
+.dropdown-menu {
+  font-size: 15px;
+}
+
+.react-datepicker-popper {
+  z-index: 3100;
+}
+
+.react-datepicker-wrapper {
+  display: block;
+}
+
+.sidebar-active {
+  color: #ff9457 !important;
+}
+.card-box-shadow {
+  box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "contains all the dashboards",
+  "author": "abdellani",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start":"yarn workspace main start",
+    "build":"yarn workspace main build",
+    "build:student":"yarn workspace student run build",
+    "start:student":"mv packages/student/build/* packages/server/dist && yarn run start:server",
+    "lint":"eslint -c .eslintrc.js --ext .js,.jsx .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "workspaces":{
+    "packages": [
+      "packages/*"      
+    ],
+    "nohoist": []
+  }
+}

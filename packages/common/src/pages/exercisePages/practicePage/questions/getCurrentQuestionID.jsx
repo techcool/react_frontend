@@ -1,0 +1,38 @@
+import {
+  EXERCISE_FILL_THE_BLANK,
+  EXERCISE_FILL_THE_GAPS,
+  EXERCISE_MATCH_AUDIO_DESCRIPTION,
+  EXERCISE_MATCH_VISUAL_DESCRIPTION,
+  EXERCISE_TRUE_FALSE,
+  EXERCISE_REWRITE_THE_STORY_IN_ENGLISH,
+  EXERCISE_READ,
+  EXERCISE_CLOZE,
+  EXERCISE_WRITE_STORY,
+  EXERCISE_CHUNK_STORY,
+  EXERCISE_RECORD_RETELL_STORY,
+  EXERCISE_SHORT_ANSWER,
+  EXERCISE_LONG_ANSWER,
+} from 'common/src/constants';
+
+function getCurrentQuestionID() {
+  const currentQuestion = this.getCurrentQuestion();
+  switch (this.getCurrentExerciseID()) {
+    case EXERCISE_FILL_THE_BLANK:
+    case EXERCISE_FILL_THE_GAPS:
+    case EXERCISE_MATCH_AUDIO_DESCRIPTION:
+    case EXERCISE_MATCH_VISUAL_DESCRIPTION:
+    case EXERCISE_TRUE_FALSE:
+    case EXERCISE_SHORT_ANSWER:
+    case EXERCISE_LONG_ANSWER:
+      const { id } = currentQuestion
+      return id;
+    case EXERCISE_REWRITE_THE_STORY_IN_ENGLISH:
+    case EXERCISE_READ:
+    case EXERCISE_WRITE_STORY:
+    case EXERCISE_CLOZE:
+    case EXERCISE_CHUNK_STORY:
+    case EXERCISE_RECORD_RETELL_STORY:
+      return 0;
+  }
+}
+export default getCurrentQuestionID;

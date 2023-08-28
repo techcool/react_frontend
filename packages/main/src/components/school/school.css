@@ -1,0 +1,17 @@
+.dash-card{
+    padding: 20px 20px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*min-height: 80px;*/
+    min-height: 50px;
+    margin-bottom: 2rem;
+  }
+  .dash-card h2, .dash-card span{
+    font-weight: bold;
+    /*font-size: 20px;*/
+    font-size: 14px;
+    color: #181439
+  }
